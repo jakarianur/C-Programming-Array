@@ -1,13 +1,19 @@
 #include <stdio.h>  
-int main() {  
-int size, a;  
-printf("Enter your any array size: ");  
-scanf("%d", &size);  
-int arr[size];  
-printf("Enter %d Numbers: ", size);  
-for(a=0; a<size; a++) {  
-    scanf("%d", &arr[a]);} 
+int main()
+{  
+int i,n;  
+printf("Enter any array size: ");  
+scanf("%d",&n);  
+int arr[n];  
+printf("Enter %d Numbers: ",n);  
+for(i=0; i<n; i++)
+{  
+    scanf("%d",&arr[i]);
+} 
     printf("Revesed Element: "); 
-    for(a=size-1; a>=0; a--){ 
-printf("%d ", arr[a]); }  
-return 0; } 
+    for(i=n-1; i>=0; i--)
+    { 
+    printf("%d ", arr[i]);
+    }  
+return 0;
+} 
