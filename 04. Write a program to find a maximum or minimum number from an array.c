@@ -1,15 +1,21 @@
 #include <stdio.h>  
-int main() {  
-int a, b;  
-printf("Enter your any array size: ");  
-scanf(“%d”, &a); 
-int nur[a];  
-printf("Enter %d Numbers: ", a);  
-for(b=0; b<a; b++){  
-scanf("%d", &nur[b]);}  
+int main()
+{  
+int i, n;  
+printf("Enter any array size: ");  
+scanf(“%d”,&n); 
+int arr[n];  
+printf("Enter %d Numbers: ", n);  
+for(i=0; i<n; i++)
+{  
+scanf("%d", &arr[i]);
+}  
 printf("The maximum numbers are: ");  
-int max = nur[0];  
-for(b=1; b<a; b++) {  
-max=nur[b];}  
+int max = arr[0];  
+for(i=1; i<n; i++)
+{  
+max=arr[i];
+}  
 printf("%d", max);  
-return 0; }
+return 0;
+}
