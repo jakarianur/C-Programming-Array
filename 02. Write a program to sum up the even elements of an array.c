@@ -1,14 +1,19 @@
 #include <stdio.h> 
-int main() { 
-int a, b, sum=0; 
-printf("Enter your any array size: "); 
-scanf("%d", &a); 
-int nur[a]; 
-printf("Enter %d Numbers: ", a); 
-for(b=0; b<a; b++) 
-scanf("%d", &nur[b]); 
-for(b=0; b<a; b++) { 
-if(nur[b]%2==0) 
-sum=sum+nur[b]; } 
+int main()
+{ 
+int i,n,sum=0; 
+printf("Enter any array size: "); 
+scanf("%d",&n); 
+int arr[n]; 
+printf("Enter %d Numbers: ", n); 
+for(i=0; i<n; i++)
+{ 
+scanf("%d", &arr[i]);
+}
+for(i=0; i<n; i++)
+{ 
+if(arr[i]%2==0) 
+sum=sum+arr[i];
+} 
 printf("Total Sum of Even values is: %d ",sum); 
 return 0; } 
