@@ -1,10 +1,12 @@
 #include <stdio.h>
-int main(){
+int main()
+{
     int arr[100],i,j,n,temp=0;
     printf("Enter any array aize: ");
     scanf("%d", &n);
     printf("Enter %d Array Element: ", n);
-    for(i=0;i<n;i++){
+    for(i=0;i<n;i++)
+    {
         scanf("%d", &arr[i]);
     }
         for(i=0;i<n;i++){
