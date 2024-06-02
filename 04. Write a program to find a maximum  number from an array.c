@@ -14,7 +14,10 @@ printf("The maximum numbers are: ");
 int max = arr[0];  
 for(i=1; i<n; i++)
 {  
-max=arr[i];
+if(arr[i] > max)
+    {
+     max=arr[i];
+    }
 }  
 printf("%d", max);  
 return 0;
