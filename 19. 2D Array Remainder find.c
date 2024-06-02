@@ -10,7 +10,7 @@ int main() {
     int arr[r][c];
     int remainder[r][c];
 
-    printf("Enter the elements of the array: \n");
+    printf("Enter %d by %d Array Element: \n", r,c);
     for (i = 0; i < r; i++) {
         for (j = 0; j < c; j++) {
             scanf("%d", &arr[i][j]);
