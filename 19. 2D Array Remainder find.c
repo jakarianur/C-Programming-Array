@@ -18,14 +18,14 @@ int main() {
     }
     printf("Enter the divisor: ");
     scanf("%d", &divisor);
-    for (int i = 0; i < r; i++) {
-        for (int j = 0; j < c; j++) {
+    for (i = 0; i < r; i++) {
+        for (j = 0; j < c; j++) {
             remainder[i][j] = arr[i][j] % divisor;
         }
     }
     printf("Remainders of the elements when divided by %d:\n", divisor);
-    for (int i = 0; i < r; i++) {
-        for (int j = 0; j < c; j++) {
+    for (i = 0; i < r; i++) {
+        for (j = 0; j < c; j++) {
             printf("%d ", remainder[i][j]);
         }
         printf("\n");
